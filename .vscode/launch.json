@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/USER/lab21/lab21",  // Ensure this points to the right directory
+      "program": "c:/Users/USER/lab21/lab21/calculator.exe",  // This should be the built executable
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",  // Make sure this points to your gdb executable in the MinGW folder
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build" 
+    }
+  ]
+}
